@@ -60,7 +60,7 @@ public class Calculator {
 
         JFrame frame = new JFrame("Calculator");
         frame.setContentPane(windowContent);
-        frame.pack();
+        //frame.pack();
         frame.setVisible(true);
 
     }
