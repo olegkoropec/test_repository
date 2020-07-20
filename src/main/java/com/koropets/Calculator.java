@@ -1,3 +1,4 @@
+package com.koropets;
 import javax.swing.*;
 import java.awt.GridLayout;
 import java.awt.BorderLayout;
@@ -63,4 +64,5 @@ public class Calculator {
         frame.setVisible(true);
 
     }
+
 }
