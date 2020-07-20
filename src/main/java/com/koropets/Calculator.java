@@ -54,13 +54,13 @@ public class Calculator {
         p2.add(buttonMultiplay);
         p2.add(buttonDivision);
 
-//        windowContent.add("Center",p1);
-//        windowContent.add("East",p2);
-//        windowContent.add("North",displayField);
+        windowContent.add("Center",p1);
+        windowContent.add("East",p2);
+        windowContent.add("North",displayField);
 
         JFrame frame = new JFrame("Calculator");
         frame.setContentPane(windowContent);
-        //frame.pack();
+        frame.pack();
         frame.setVisible(true);
 
     }
