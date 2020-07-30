@@ -12,6 +12,10 @@ public class Calculator {
 
         JButton [] button = new JButton[10];
 
+        for (int i=0; i<10; i++){
+            button[i] = new JButton(" "+i);
+            p1.add(button[i]);}
+
 //        JButton button0 = new JButton("0");
 //        JButton button1 = new JButton("1");
 //        JButton button2 = new JButton("2");
@@ -35,8 +39,7 @@ public class Calculator {
         GridLayout gl =new GridLayout(4,3);
         p1.setLayout(gl);
 
-        for (int i=0; i<10; i++)
-            p1.add(button[i]);
+
 
 //        p1.add(button1);
 //        p1.add(button2);
