@@ -10,7 +10,7 @@ public class Calculator {
         JPanel p2 = new JPanel();
         JTextField displayField = new JTextField(20);
 
-
+        JButton [] button = new JButton[10];
 
 //        JButton button0 = new JButton("0");
 //        JButton button1 = new JButton("1");
