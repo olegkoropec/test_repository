@@ -1,15 +1,13 @@
 package com.koropets;
 
-class QueueBegin
-{
+class QueueBegin    {
     private int maxSize;
     private long[] queArray;
     private int front;
     private int rear;
     private int nItems;
 
-    public QueueBegin(int s)
-    {
+    public QueueBegin(int s)    {
         maxSize = s;
         queArray = new long[maxSize];
         front = 0;
@@ -17,37 +15,33 @@ class QueueBegin
         nItems = 0;
     }
 
-    public void insert(long j)
-    {
-        if(rear == maxSize)
+    public void insert(long j)    {
+        if(rear == maxSize) {
             rear = 0;
+        }
         queArray[rear++] = j;
         nItems++;
         System.out.print(j+" ");
 
     }
 
-    public long remove()
-    {
+    public long remove()    {
         long temp = queArray[front++];
-        if(front == maxSize)
+        if(front == maxSize) {
             front = 0;
+        }
         nItems--;
         System.out.print(temp+" ");
         return temp;
 
     }
 
-    public boolean isEmpty()
-    {
+    public boolean isEmpty()    {
         return (nItems==0);
     }
-
 }
-class Queue
-{
-    public static void main(String[] args)
-    {
+class Queue {
+    public static void main(String[] args)    {
         QueueBegin theQueueBegin = new QueueBegin(5);
         System.out.println("Вставка 4 элементов");
         theQueueBegin.insert(10);
@@ -70,8 +64,7 @@ class Queue
         System.out.println();
 
        System.out.println("Результат");
-        while( !theQueueBegin.isEmpty() )
-        {
+        while( !theQueueBegin.isEmpty() )        {
             long n = theQueueBegin.remove();
             System.out.print("");
         }
