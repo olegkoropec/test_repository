@@ -86,7 +86,7 @@ class LinkedList {
             prev.setNext(cur.getNext()) ;
         }
 
-        System.out.println("i had delete index  " + index);
+        System.out.println("i have deleted the index  " + index);
 
             return true;}
 
@@ -118,7 +118,9 @@ public class List
         list.print();
         list.size();
         list.get(1);
-        list.delete(4);
+        list.delete(7);
+        list.print();
+        list.delete(3);
         list.print();
     }
 }
