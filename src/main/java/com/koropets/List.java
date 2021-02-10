@@ -68,8 +68,10 @@ class LinkedList {
 
     public boolean delete (int index){
 
-        if (index < size()){
-
+        if (index > size()){
+            return false;
+        }
+else {
         Node cur = first;
         Node prev = first;
         int i = 0;
@@ -88,10 +90,7 @@ class LinkedList {
 
         System.out.println("i have deleted the index  " + index);
 
-            return true;}
-
- else        {
-            return false;
+            return true;
         }
     }
 
