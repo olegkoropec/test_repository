@@ -24,12 +24,6 @@ public class Rank {
         return name;
     }
 
-    public static void main(String[] args) {
-        Rank One = new Rank("1");
-        System.out.println(values[1].name);
-        System.out.println(One.getName());
-    }
-
-}
+  }
 
 
