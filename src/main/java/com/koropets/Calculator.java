@@ -10,16 +10,22 @@ public class Calculator {
         JPanel p2 = new JPanel();
         JTextField displayField = new JTextField(20);
 
-        JButton button0 = new JButton("0");
-        JButton button1 = new JButton("1");
-        JButton button2 = new JButton("2");
-        JButton button3 = new JButton("3");
-        JButton button4 = new JButton("4");
-        JButton button5 = new JButton("5");
-        JButton button6 = new JButton("6");
-        JButton button7 = new JButton("7");
-        JButton button8 = new JButton("8");
-        JButton button9 = new JButton("9");
+        JButton [] button = new JButton[10];
+
+        for (int i=0; i<10; i++){
+            button[i] = new JButton(" "+i);
+            p1.add(button[i]);}
+
+//        JButton button0 = new JButton("0");
+//        JButton button1 = new JButton("1");
+//        JButton button2 = new JButton("2");
+//        JButton button3 = new JButton("3");
+//        JButton button4 = new JButton("4");
+//        JButton button5 = new JButton("5");
+//        JButton button6 = new JButton("6");
+//        JButton button7 = new JButton("7");
+//        JButton button8 = new JButton("8");
+//        JButton button9 = new JButton("9");
         JButton buttonPoint  = new JButton(".");
         JButton buttonEqual = new JButton("=");
         JButton buttonPlus = new JButton ("+");
@@ -33,16 +39,18 @@ public class Calculator {
         GridLayout gl =new GridLayout(4,3);
         p1.setLayout(gl);
 
-        p1.add(button1);
-        p1.add(button2);
-        p1.add(button3);
-        p1.add(button4);
-        p1.add(button5);
-        p1.add(button6);
-        p1.add(button7);
-        p1.add(button8);
-        p1.add(button9);
-        p1.add(button0);
+
+
+//        p1.add(button1);
+//        p1.add(button2);
+//        p1.add(button3);
+//        p1.add(button4);
+//        p1.add(button5);
+//        p1.add(button6);
+//        p1.add(button7);
+//        p1.add(button8);
+//        p1.add(button9);
+//        p1.add(button0);
         p1.add(buttonPoint);
         p1.add(buttonEqual);
 
