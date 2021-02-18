@@ -17,7 +17,7 @@ public class Suit {
     public String getName() {
         return name;
     }
-}
+
 
 
 
