@@ -1,6 +1,5 @@
 package com.koropets.Card;
 
-
 public class Card {
     private Rank rank;
     private Suit suit;
@@ -77,7 +76,7 @@ public class Card {
             card17, card18, card19, card20, card21, card22, card23, card24,
             card25, card26, card27, card28, card29, card30, card31, card32, card33, card34, card35, card36,};
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         System.out.println(val[20].getRank().getName()+" "+val[2].getSuit().getName());
 
